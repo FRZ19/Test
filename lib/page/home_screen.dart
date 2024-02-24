@@ -101,6 +101,7 @@ class _HomePageState extends State<HomePage> {
           return ListTile(
             title: Text(notes[index].title),
             onTap: () => _editNote(notes[index]),
+            onLongPress: () => _deleteNote(notes[index]),
           );
         },
       ),
